@@ -12,7 +12,6 @@ const Header = () => {
           <Link to="/applied-jobs">Applied Jobs</Link>
           <Link to="/blog">Blog</Link> */}
           <NavLink
-            exact
             to="/"
             className={({ isActive }) => (isActive ? "active" : "default")}
           >

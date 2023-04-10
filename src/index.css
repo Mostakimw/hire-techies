@@ -14,3 +14,10 @@
 .active {
   @apply font-medium tracking-wide text-blue-600;
 }
+
+.job-details-secondary {
+  @apply font-bold text-xl text-[#474747] mt-3 flex items-center;
+}
+.job-details-tertiary {
+  @apply text-[#757575] font-normal;
+}

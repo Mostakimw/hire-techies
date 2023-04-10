@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ singleJob }) => {
+  // console.log(singleJob);
   const {
+    id,
     company_logo,
     job_title,
     company_name,
@@ -27,7 +30,9 @@ const FeaturedJob = ({ singleJob }) => {
           <p>Location: {location}</p>
           <p>Salary: {salary}</p>
         </div>
-        <button className="my-btn mt-2">View Details</button>
+        <Link to={`/job-details/${id}`}>
+          <button className="my-btn mt-2">View Details</button>
+        </Link>
       </div>
     </>
   );

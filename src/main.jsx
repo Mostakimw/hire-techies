@@ -11,6 +11,7 @@ import Banner from "./components/Banner";
 import Category from "./components/Category";
 import Feature from "./components/Feature";
 import { loadData } from "./utils/Loaders/loadData";
+import JobDetails from "./components/JobDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,16 +23,6 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: loadData,
-        // children: [
-        //   {
-        //     path: "/",
-        //     element: <Category></Category>,
-        //   },
-        //   {
-        //     path: "/",
-        //     element: <Feature></Feature>,
-        //   },
-        // ],
       },
       {
         path: "/statistics",
@@ -44,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/job-details/:id",
+        element: <JobDetails></JobDetails>,
+        loader: () => fetch("/feature.json"),
       },
     ],
   },

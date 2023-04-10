@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply font-semibold text-white text-xl bg-gradient-to-br from-[#7E90FE] to-[#9873FF] px-[28px] py-[19px] rounded-md transition duration-700 ease-in-out;
+}
+.btn:hover {
+  @apply bg-gradient-to-br from-[#9873FF] to-[#7E90FE];
+}

@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 import SingleCategory from "./SingleCategory";
 
 const Category = ({ categories }) => {
-  console.log(categories);
   return (
     <div className="mt-24">
       <div className="text-center mb-8">
@@ -16,7 +15,7 @@ const Category = ({ categories }) => {
         </p>
       </div>
 
-      <div className="grid grid-cols-12 gap-6">
+      <div className="md:grid grid-cols-12 gap-6">
         {categories.map((cat) => (
           <SingleCategory key={cat.id} category={cat}></SingleCategory>
         ))}

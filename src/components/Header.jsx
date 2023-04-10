@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
-      <div className="flex justify-between items-center">
+      <div className="md:flex justify-between items-center">
         <h1 className="text-3xl font-bold">HireTechies</h1>
         <div className="flex gap-6">
           <Link to="/">Home</Link>

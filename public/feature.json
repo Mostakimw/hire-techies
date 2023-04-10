@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
+    "job_title": "Software Engineer",
+    "company_name": "Google",
+    "remote_or_onsite": "Onsite",
+    "location": "Mountain View, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "job_description": "We are looking for a talented software engineer to join our team and help us build the next generation of web applications and services.",
+    "job_responsibility": "Design, develop, and maintain software applications and services, collaborate with cross-functional teams to define and implement new features and functionality, and stay up-to-date with the latest trends and best practices in software engineering.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "Minimum 5 years of experience in software engineering",
+    "contact_information": {
+      "phone": "555-9012",
+      "email": "jobs@google.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
+    "job_title": "Senior Software Engineer",
+    "company_name": "Netflix",
+    "remote_or_onsite": "Remote",
+    "location": "Any",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$150,000 - $200,000",
+    "job_description": "We are looking for a Senior Software Engineer to join our team and help us build the next generation of streaming technology.",
+    "job_responsibility": "Design and implement new features and functionality, collaborate with cross-functional teams to deliver high-quality software, and stay up-to-date with the latest trends and best practices in software development.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "Minimum 8 years of experience in software development",
+    "contact_information": {
+      "phone": "555-5555",
+      "email": "jobs@netflix.com"
+    }
+  },
+
+  {
+    "id": 3,
+    "company_logo": "https://cdn.worldvectorlogo.com/logos/tesla-9.svg",
+    "job_title": "Software Engineer",
+    "company_name": "Tesla",
+    "remote_or_onsite": "Onsite",
+    "location": "Fremont, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $130,000",
+    "job_description": "We are seeking a highly motivated software engineer to join our team and work on developing innovative solutions for our products.",
+    "job_responsibility": "Design and implement software solutions for a variety of projects, collaborate with cross-functional teams to deliver high-quality software, and stay up-to-date with the latest trends and best practices in software development.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "Minimum 5 years of experience in software development",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@tesla.com"
+    }
+  },
+
+  {
+    "id": 4,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "job_title": "Software Development Engineer",
+    "company_name": "Amazon",
+    "remote_or_onsite": "Remote",
+    "location": "Any",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $160,000",
+    "job_description": "We are seeking an experienced software development engineer to join our team and work on building scalable and reliable distributed systems.",
+    "job_responsibility": "Design and develop distributed systems, collaborate with cross-functional teams to deliver high-quality software, and participate in the full software development lifecycle.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "Minimum 3 years of experience in software development",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@amazon.com"
+    }
+  },
+
+  {
+    "id": 5,
+    "company_logo": "https://www.vectorlogo.zone/logos/apple/apple-ar21.png",
+    "job_title": "iOS Developer",
+    "company_name": "Apple",
+    "remote_or_onsite": "Onsite",
+    "location": "Cupertino, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $160,000",
+    "job_description": "We are seeking an experienced iOS developer to join our team and work on building innovative apps for our platform.",
+    "job_responsibility": "Design and develop iOS apps, collaborate with cross-functional teams to deliver high-quality software, and stay up-to-date with the latest trends and best practices in iOS development.",
+    "educational_requirements": "Bachelor's degree in Computer Science or a related field",
+    "experiences": "Minimum 5 years of experience in iOS development",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@apple.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "YouTube",
+    "remote_or_onsite": "Remote",
+    "location": "Any",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "job_description": "We are looking for a Machine Learning Engineer to join our team and help us build state-of-the-art algorithms for content recommendations.",
+    "job_responsibility": "Develop and deploy machine learning models, collaborate with cross-functional teams to improve content recommendation systems, and stay up-to-date with the latest research in machine learning.",
+    "educational_requirements": "Master's degree in Computer Science or a related field",
+    "experiences": "Minimum 3 years of experience in machine learning",
+    "contact_information": {
+      "phone": "555-5555",
+      "email": "jobs@youtube.com"
+    }
+  }
+]

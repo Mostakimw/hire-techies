@@ -5,14 +5,16 @@ import Feature from "./Feature";
 import Category from "./Category";
 import { Outlet } from "react-router-dom";
 import { useLoaderData } from "react-router-dom";
+import Footer from "./Footer";
 
 const Home = () => {
-  const categories = useLoaderData();
+  const { categories, featuredJob } = useLoaderData();
   return (
     <div>
       <Banner></Banner>
       <Category categories={categories}></Category>
-      <Feature></Feature>
+      <Feature featuredJob={featuredJob}></Feature>
+      <Footer></Footer>
     </div>
   );
 };

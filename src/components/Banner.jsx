@@ -15,7 +15,7 @@ const Banner = () => {
           need. Its your future. Come find it. Manage all your job application
           from start to finish.
         </p>
-        <button className="btn mt-6">Get Started</button>
+        <button className="my-btn mt-6">Get Started</button>
       </div>
       <div>
         <img

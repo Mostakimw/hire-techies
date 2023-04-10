@@ -7,6 +7,10 @@ import Statistics from "./components/Statistics";
 import Home from "./components/Home";
 import AppliedJobs from "./components/AppliedJobs";
 import Blog from "./components/blog";
+import Banner from "./components/Banner";
+import Category from "./components/Category";
+import Feature from "./components/Feature";
+import { loadData } from "./utils/Loaders/loadData";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +21,17 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: loadData,
+        // children: [
+        //   {
+        //     path: "/",
+        //     element: <Category></Category>,
+        //   },
+        //   {
+        //     path: "/",
+        //     element: <Feature></Feature>,
+        //   },
+        // ],
       },
       {
         path: "/statistics",

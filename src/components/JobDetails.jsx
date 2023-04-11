@@ -1,14 +1,16 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { addToDB } from "../utils/Loaders/fakeDB";
 
 const JobDetails = () => {
   const featuredJob = useLoaderData();
   const { id } = useParams();
-  const jobId = parseInt(id);
-  const job = featuredJob.find((job) => job.id === jobId);
+  const job = featuredJob.find((job) => job.id === id);
 
-  console.log(job);
+  const applyNowBtn = (id) => {
+    addToDB(id);
+  };
 
   const {
     job_title,
@@ -23,8 +25,6 @@ const JobDetails = () => {
     experiences,
     contact_information,
   } = job;
-
-  console.log(job_title);
   return (
     <div>
       <h1 className="text-3xl font-bold text-[#1A1919] mb-3 text-center mt-16">
@@ -114,7 +114,12 @@ const JobDetails = () => {
               Address: <span className="job-details-tertiary">{location}</span>
             </p>
           </div>
-          <button className="my-btn w-full mt-6">Apply Now</button>
+          <button
+            onClick={() => applyNowBtn(id)}
+            className="my-btn w-full mt-6"
+          >
+            Apply Now
+          </button>
         </div>
       </div>
     </div>

@@ -18,25 +18,25 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/statistics"
+            to="statistics"
             className={({ isActive }) => (isActive ? "active" : "default")}
           >
             Statistics
           </NavLink>
           <NavLink
-            to="/applied-jobs"
+            to="applied-jobs"
             className={({ isActive }) => (isActive ? "active" : "default")}
           >
             Applied Jobs
           </NavLink>
           <NavLink
-            to="/blog"
+            to="blog"
             className={({ isActive }) => (isActive ? "active" : "default")}
           >
             Blog
           </NavLink>
         </div>
-        <Link className="my-btn" to="/all-jobs">
+        <Link className="my-btn" to="all-jobs">
           Start Applying
         </Link>
       </div>

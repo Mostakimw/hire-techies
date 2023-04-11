@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "64352bd9ca5f89e91e7c195d",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
     "job_title": "Software Engineer",
     "company_name": "Google",
@@ -15,10 +15,11 @@
     "contact_information": {
       "phone": "555-9012",
       "email": "jobs@google.com"
-    }
+    },
+    "isApplied": false
   },
   {
-    "id": 2,
+    "id": "64352bd9f3deee7f4ce353d7",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png",
     "job_title": "Senior Software Engineer",
     "company_name": "Netflix",
@@ -33,11 +34,12 @@
     "contact_information": {
       "phone": "555-5555",
       "email": "jobs@netflix.com"
-    }
+    },
+    "isApplied": false
   },
 
   {
-    "id": 3,
+    "id": "64352bd924e189d301f78fa9",
     "company_logo": "https://cdn.worldvectorlogo.com/logos/tesla-9.svg",
     "job_title": "Software Engineer",
     "company_name": "Tesla",
@@ -52,11 +54,12 @@
     "contact_information": {
       "phone": "555-1234",
       "email": "jobs@tesla.com"
-    }
+    },
+    "isApplied": false
   },
 
   {
-    "id": 4,
+    "id": "64352bd9d7237a2786bb58a8",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
     "job_title": "Software Development Engineer",
     "company_name": "Amazon",
@@ -71,11 +74,12 @@
     "contact_information": {
       "phone": "555-1234",
       "email": "jobs@amazon.com"
-    }
+    },
+    "isApplied": false
   },
 
   {
-    "id": 5,
+    "id": "64352bd9d9ed8a68bfcc8add",
     "company_logo": "https://www.vectorlogo.zone/logos/apple/apple-ar21.png",
     "job_title": "iOS Developer",
     "company_name": "Apple",
@@ -89,10 +93,11 @@
     "contact_information": {
       "phone": "555-1234",
       "email": "jobs@apple.com"
-    }
+    },
+    "isApplied": false
   },
   {
-    "id": 6,
+    "id": "64352bd9d9ed8a78bfcc5add",
     "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/1024px-YouTube_Logo_2017.svg.png",
     "job_title": "Machine Learning Engineer",
     "company_name": "YouTube",
@@ -107,6 +112,7 @@
     "contact_information": {
       "phone": "555-5555",
       "email": "jobs@youtube.com"
-    }
+    },
+    "isApplied": false
   }
 ]

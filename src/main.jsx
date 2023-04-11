@@ -12,12 +12,13 @@ import Category from "./components/Category";
 import Feature from "./components/Feature";
 import { loadData } from "./utils/Loaders/loadData";
 import JobDetails from "./components/JobDetails";
+import ErroPage from "./components/ErroPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    errorElement: <h1>Error Page</h1>,
+    errorElement: <ErroPage></ErroPage>,
     children: [
       {
         path: "/",

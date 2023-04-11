@@ -1,47 +1,260 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+// import React, { useState } from "react";
+// import { Link, NavLink } from "react-router-dom";
+// import {
+//   BoltIcon,
+//   Bars3BottomRightIcon,
+//   XMarkIcon,
+// } from "@heroicons/react/24/solid";
 
-const Header = () => {
+// const Header = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+//   return (
+//     <div >
+//       <div className="relative md:flex justify-between items-center">
+//         <Link to="/">
+//           <h1 className="text-3xl font-bold">HireTechies</h1>
+//         </Link>
+//         {/* Nav Items Section */}
+//         <div className="flex items-center gap-6 font-semibold">
+//           <NavLink
+//             to="/"
+//             className={({ isActive }) => (isActive ? "active" : "default")}
+//           >
+//             Home
+//           </NavLink>
+//           <NavLink
+//             to="statistics"
+//             className={({ isActive }) => (isActive ? "active" : "default")}
+//           >
+//             Statistics
+//           </NavLink>
+//           <NavLink
+//             to="applied-jobs"
+//             className={({ isActive }) => (isActive ? "active" : "default")}
+//           >
+//             Applied Jobs
+//           </NavLink>
+//           <NavLink
+//             to="blog"
+//             className={({ isActive }) => (isActive ? "active" : "default")}
+//           >
+//             Blog
+//           </NavLink>
+//         </div>
+//         <Link className="my-btn" to="/all-jobs">
+//           Start Applying
+//         </Link>
+//         {/* Mobile Navbar Section */}
+//         <div className="lg:hidden">
+//           {/* Dropdown Open Button */}
+//           <button
+//             aria-label="Open Menu"
+//             title="Open Menu"
+//             onClick={() => setIsMenuOpen(true)}
+//           >
+//             <Bars3BottomRightIcon className="w-5 text-gray-600" />
+//           </button>
+//           {isMenuOpen && (
+//             <div className="absolute top-0 left-0 w-full z-10">
+//               <div className="p-5 bg-white border rounded shadow-sm">
+//                 {/* Logo & Button section */}
+//                 <div className="flex items-center justify-between mb-4">
+//                   <div>
+//                     <Link to="/" className="inline-flex items-center">
+//                       <BoltIcon className="h-6 w-6 text-blue-500" />
+//                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+//                         HireTechies
+//                       </span>
+//                     </Link>
+//                   </div>
+//                   {/* Dropdown menu close button */}
+//                   <div>
+//                     <button
+//                       aria-label="Close Menu"
+//                       title="Close Menu"
+//                       onClick={() => setIsMenuOpen(false)}
+//                     >
+//                       <XMarkIcon className="w-5 text-gray-600" />
+//                     </button>
+//                   </div>
+//                 </div>
+//                 {/* Mobile Nav Items Section */}
+//                 <nav>
+//                   <ul className="space-y-4">
+//                     <li>
+//                       <Link to="/" className="default">
+//                         Home
+//                       </Link>
+//                     </li>
+//                     <li>
+//                       <Link
+//                         to="/statistics"
+//                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+//                       >
+//                         Statistics
+//                       </Link>
+//                     </li>
+//                     <li>
+//                       <Link
+//                         to="/applied-job"
+//                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+//                       >
+//                         Applied Job
+//                       </Link>
+//                     </li>
+//                   </ul>
+//                 </nav>
+//               </div>
+//             </div>
+//           )}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Header;
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import {
+  BoltIcon,
+  Bars3BottomRightIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/solid";
+
+const Hudai = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div>
-      <div className="md:flex justify-between items-center">
-        <h1 className="text-3xl font-bold">HireTechies</h1>
-        <div className="flex gap-6 font-semibold">
-          {/* <Link to="/">Home</Link>
-          <Link to="/statistics">Statistics</Link>
-          <Link to="/applied-jobs">Applied Jobs</Link>
-          <Link to="/blog">Blog</Link> */}
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="statistics"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Statistics
-          </NavLink>
-          <NavLink
-            to="applied-jobs"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Applied Jobs
-          </NavLink>
-          <NavLink
-            to="blog"
-            className={({ isActive }) => (isActive ? "active" : "default")}
-          >
-            Blog
-          </NavLink>
-        </div>
-        <Link className="my-btn" to="all-jobs">
+    <div className="bg-gray-100 px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="relative flex items-center justify-between">
+        {/* Logo Section */}
+        <Link to="/" className="inline-flex items-center">
+          <BoltIcon className="h-6 w-6 text-blue-500" />
+          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+            HireTechies
+          </span>
+        </Link>
+
+        {/* Nav Items Section */}
+        <ul className="items-center hidden space-x-8 lg:flex">
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="statistics"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Statistics
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="applied-jobs"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Applied Jobs
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="blog"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Blog
+            </NavLink>
+          </li>
+          {/* <li>
+          </li> */}
+        </ul>
+        <Link className="my-btn max-lg:hidden" to="/all-jobs">
           Start Applying
         </Link>
+        {/* Mobile Navbar Section */}
+        <div className="lg:hidden">
+          {/* Dropdown Open Button */}
+          <button
+            aria-label="Open Menu"
+            title="Open Menu"
+            onClick={() => setIsMenuOpen(true)}
+          >
+            <Bars3BottomRightIcon className="w-5 text-gray-600" />
+          </button>
+          {isMenuOpen && (
+            <div className="absolute top-0 left-0 w-full z-10">
+              <div className="p-5 bg-white border rounded shadow-sm">
+                {/* Logo & Button section */}
+                <div className="flex items-center justify-between mb-4">
+                  <div>
+                    <Link to="/" className="inline-flex items-center">
+                      <BoltIcon className="h-6 w-6 text-blue-500" />
+                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                        nextPage
+                      </span>
+                    </Link>
+                  </div>
+                  {/* Dropdown menu close button */}
+                  <div>
+                    <button
+                      aria-label="Close Menu"
+                      title="Close Menu"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <XMarkIcon className="w-5 text-gray-600" />
+                    </button>
+                  </div>
+                </div>
+                {/* Mobile Nav Items Section */}
+                <nav>
+                  <ul className="space-y-4">
+                    <li>
+                      <Link to="/" className="default">
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/statistics"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Statistics
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/applied-jobs"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Applied Jobs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/blog"
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                      >
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="my-btn" to="/all-jobs">
+                        Start Applying
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Header;
+export default Hudai;

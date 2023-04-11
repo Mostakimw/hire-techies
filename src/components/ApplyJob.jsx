@@ -13,11 +13,11 @@ const ApplyJob = ({ appliedJob }) => {
     salary,
   } = appliedJob;
   return (
-    <div className="flex items-center gap-8 mb-6 border-2 rounded-lg p-10">
+    <div className="md:flex items-center gap-8 mb-6 border-2 rounded-lg p-10">
       <div className="px-12 py-24 bg-[#F4F4F4] rounded-lg inline-block">
         <img className="w-28 mb-4" src={company_logo} alt="" />
       </div>
-      <div className="flex-grow">
+      <div className="flex-grow max-sm:mt-6">
         <h2 className="text-2xl font-bold text-gray-900">{job_title}</h2>
         <p className="text-xl text-[#757575] font-semibold mt-2">
           {company_name}
@@ -31,9 +31,11 @@ const ApplyJob = ({ appliedJob }) => {
           <p>Salary: {salary}</p>
         </div>
       </div>
-      <Link className="justify-end" to={`/job-details/${id}`}>
-        <button className="my-btn mt-2 ">View Details</button>
-      </Link>
+      <div className="max-sm:flex justify-center max-sm:mt-6">
+        <Link className="justify-end" to={`/job-details/${id}`}>
+          <button className="my-btn mt-2 ">View Details</button>
+        </Link>
+      </div>
     </div>
   );
 };

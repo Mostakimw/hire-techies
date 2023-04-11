@@ -16,7 +16,7 @@ const FeaturedJob = ({ singleJob }) => {
 
   return (
     <>
-      <div className="col-span-6 border-2 rounded-md  p-10">
+      <div className="col-span-6 border-2 rounded-md p-10 mb-8">
         <img className="w-28 mb-4" src={company_logo} alt="" />
         <h2 className="text-2xl font-bold text-gray-900">{job_title}</h2>
         <p className="text-xl text-[#757575] font-semibold mt-2">

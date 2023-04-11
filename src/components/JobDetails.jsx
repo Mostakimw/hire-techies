@@ -58,7 +58,7 @@ const JobDetails = () => {
           </h2>
         </div>
         <div className="col-span-4 ">
-          <div className="bg-[#7E90FE1A] p-8 rounded-md">
+          <div className="bg-[#7E90FE1A] p-4 md:p-8 rounded-md mt-8">
             <h2 className="font-bold text-xl text-[#1A1919] mb-8">
               Job Details
             </h2>
@@ -68,7 +68,7 @@ const JobDetails = () => {
                 src="/src/assets/Icons/Frame.png"
                 alt=""
               />{" "}
-              Salary: <span className="job-details-tertiary">{salary}</span>
+              Salary: <span className="job-details-tertiary"> {salary}</span>
             </p>
             <p className="job-details-secondary">
               <img

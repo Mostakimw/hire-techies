@@ -31,7 +31,7 @@ const Feature = ({ featuredJob }) => {
             ))}
       </div>
       <button onClick={handleShowAllJob} className="my-btn mt-12 mx-auto block">
-        {showAllJobs ? "View Less" : "Show All Jobs"}
+        {showAllJobs ? "View Less" : "View All Jobs"}
       </button>
     </div>
   );

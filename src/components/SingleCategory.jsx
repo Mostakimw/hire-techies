@@ -5,12 +5,12 @@ const SingleCategory = ({ category }) => {
   return (
     <>
       <div className="col-span-3 p-6 bg-gradient-to-br from-[#7E90FE0D] to-[#9873FF0D] border-2 border-r-emerald-50 rounded-md max-sm:mb-8 max-sm:text-center">
-        <div className="p-4 bg-[#7E90FE1A] rounded-md w-[80px]">
-          <img className="w-10 h-10 " src={logo} />
+        <div className="p-4 bg-[#7E90FE1A] rounded-md w-[80px] mx-auto">
+          <img className="w-10 h-10" src={logo} />
         </div>
         <div>
           <h2 className="mt-4 mb-2 text-xl font-bold">Marketing</h2>
-          <p>Jobs Available</p>
+          <p>{jobs_available} Jobs Available</p>
         </div>
       </div>
     </>

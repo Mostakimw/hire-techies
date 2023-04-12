@@ -31,7 +31,7 @@ const Hudai = () => {
           </li>
           <li>
             <NavLink
-              to="statistics"
+              to="/statistics"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Statistics
@@ -39,7 +39,7 @@ const Hudai = () => {
           </li>
           <li>
             <NavLink
-              to="applied-jobs"
+              to="/applied-jobs"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Applied Jobs
@@ -47,7 +47,7 @@ const Hudai = () => {
           </li>
           <li>
             <NavLink
-              to="blog"
+              to="/blog"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Blog
@@ -56,7 +56,7 @@ const Hudai = () => {
           {/* <li>
           </li> */}
         </ul>
-        <Link className="my-btn max-lg:hidden" to="/all-jobs">
+        <Link className="my-btn max-lg:hidden " to="/">
           Start Applying
         </Link>
         {/* Mobile Navbar Section */}
@@ -126,7 +126,7 @@ const Hudai = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="my-btn" to="/all-jobs">
+                      <Link className="my-btn " to="/">
                         Start Applying
                       </Link>
                     </li>

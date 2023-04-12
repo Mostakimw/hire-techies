@@ -2,6 +2,9 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { addToDB } from "../utils/Loaders/fakeDB";
+import toast, { Toaster } from "react-hot-toast";
+import Swal from "sweetalert2";
+// import withReactContent from "sweetalert2-react-content";
 
 const JobDetails = () => {
   const featuredJob = useLoaderData();
@@ -10,8 +13,8 @@ const JobDetails = () => {
 
   const applyNowBtn = (id) => {
     addToDB(id);
+    Swal.fire("Good job!", "You Applied For This Job!", "success");
   };
-
   const {
     job_title,
     company_name,

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const FeaturedJob = ({ singleJob }) => {
-  // console.log(singleJob);
   const {
     id,
     company_logo,
@@ -26,12 +25,27 @@ const FeaturedJob = ({ singleJob }) => {
           <p className="job-type">{remote_or_onsite}</p>
           <p className="job-type">{fulltime_or_parttime}</p>
         </div>
-        <div className="flex gap-4 text-[#757575] font-semibold my-4">
-          <p>Location: {location}</p>
-          <p>Salary: {salary}</p>
+        <div className="md:flex gap-4 text-[#757575] font-semibold my-4">
+          <p>
+            <img
+              className="inline-block mr-1"
+              src="https://i.ibb.co/qxsm5zb/Frame-4.png"
+              alt=""
+            />
+            Location: {location}
+          </p>
+          <p>
+            {" "}
+            <img
+              className="inline-block mr-1"
+              src="https://i.ibb.co/Qk1FfxF/Frame.png"
+              alt=""
+            />
+            Salary: {salary}
+          </p>
         </div>
         <Link to={`/job-details/${id}`}>
-          <button className="my-btn mt-2">View Details</button>
+          <button className="view-btn mt-2 py-2">View Details</button>
         </Link>
       </div>
     </>

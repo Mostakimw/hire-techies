@@ -12,8 +12,7 @@ const Feature = ({ featuredJob }) => {
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-3">Featured Job</h1>
         <p className="text-[#757575]">
-          Explore thousands of job opportunities with all the information you
-          need. Its your future
+          Top Jobs of the Week: Discover Exciting Opportunities in Your Field
         </p>
       </div>
       <div className="md:grid grid-cols-12 gap-8 mt-16">

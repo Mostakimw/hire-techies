@@ -10,8 +10,8 @@ const Category = ({ categories }) => {
           Job Category List
         </h1>
         <p className="text-[#757575]">
-          Explore thousands of job opportunities with all the information you
-          need. Its your future
+          Unlock Your Career Potential: Explore Thousands of Job Opportunities
+          Today!
         </p>
       </div>
 

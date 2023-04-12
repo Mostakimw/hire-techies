@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 .my-btn {
-  @apply font-semibold text-white text-xl bg-gradient-to-br from-[#7E90FE] to-[#9873FF] px-[25px] py-[15px] rounded-md transition duration-700 ease-in-out;
+  @apply font-semibold text-white text-xl bg-gradient-to-br from-[#7E90FE] to-[#9873FF] px-[20px] md:px-[25px] py-[12px] md:py-[15px] rounded-md transition duration-700 ease-in-out;
 }
 .my-btn:hover {
+  @apply bg-gradient-to-br from-[#9873FF] to-[#7E90FE];
+}
+.view-btn {
+  @apply font-semibold text-white text-xl bg-gradient-to-br from-[#7E90FE] to-[#9873FF] px-[20px] py-[10px] rounded-md transition duration-700 ease-in-out;
+}
+.view-btn:hover {
   @apply bg-gradient-to-br from-[#9873FF] to-[#7E90FE];
 }
 .job-type {

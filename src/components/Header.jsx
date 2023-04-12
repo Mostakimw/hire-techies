@@ -56,7 +56,7 @@ const Hudai = () => {
           {/* <li>
           </li> */}
         </ul>
-        <Link className="my-btn max-lg:hidden " to="/">
+        <Link className="my-btn max-lg:hidden" to="/">
           Start Applying
         </Link>
         {/* Mobile Navbar Section */}

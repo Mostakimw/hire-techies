@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="mt-16 md:flex justify-between items-center gap-14">
+    <div className="mt-16 max-md:mt-8 flex max-md:flex-col-reverse justify-between items-center gap-14">
       <div className="md:w-[570px">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 leading-tight">
           One Step <span className="md:block">Closer To Your</span>{" "}

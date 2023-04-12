@@ -20,7 +20,7 @@ const Banner = () => {
       <div className="max-sm:mt-8">
         <img
           className="w-[800px]"
-          src="/../src/assets/all/banner.png"
+          src="/src/assets/all/banner.png"
           alt="Man image for Banner"
         />
       </div>

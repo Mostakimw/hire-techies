@@ -14,7 +14,6 @@ const Home = () => {
       <Banner></Banner>
       <Category categories={categories}></Category>
       <Feature featuredJob={featuredJob}></Feature>
-      <Footer></Footer>
     </div>
   );
 };

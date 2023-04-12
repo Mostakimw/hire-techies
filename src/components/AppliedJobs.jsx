@@ -7,6 +7,7 @@ import ApplyJob from "./ApplyJob";
 
 const AppliedJobs = () => {
   const { categories, featuredJob } = useLoaderData();
+  console.log(featuredJob);
 
   const [data, setData] = useState([]);
   const [appliedData, setAppliedData] = useState([]);
@@ -20,42 +21,8 @@ const AppliedJobs = () => {
     location,
     salary,
   } = data;
-  console.log(data);
   const storedData = getStoredData();
-  const [filterBy, setFilterBy] = useState(false);
-  const [filteredJobs, setFilterJobs] = useState([]);
-  const [showFilterJob, setShowFilterJob] = useState(false);
-  let newJobsData = [];
-  useEffect(() => {
-    for (const id in storedData) {
-      const filteredJobsData = featuredJob.filter(
-        (singleJob) => singleJob.id === id
-      );
-      newJobsData.push(...filteredJobsData);
-    }
-    setAppliedData(newJobsData);
-  }, []);
-  const handleFilterBy = (remoteOrOnsite) => {
-    setFilterBy(true);
-    if (remoteOrOnsite === "Remote") {
-      const remoteJobs = appliedData.filter(
-        (jobData) => jobData.remote_or_onsite === remoteOrOnsite
-      );
-      setFilterJobs(remoteJobs);
-      setShowFilterJob(true);
-      setFilterBy(false);
-    } else if (remoteOrOnsite === "Onsite") {
-      const remoteJobs = appliedData.filter(
-        (jobData) => jobData.remote_or_onsite === remoteOrOnsite
-      );
-      setFilterJobs(remoteJobs);
-      setShowFilterJob(true);
-      setFilterBy(false);
-    } else if (remoteOrOnsite === "All") {
-      setShowFilterJob(false);
-      setFilterBy(false);
-    }
-  };
+  console.log(storedData);
 
   // finding applied job data from main data
   useEffect(() => {
@@ -71,59 +38,51 @@ const AppliedJobs = () => {
       }
     }
     setData(savedJob);
+    setAppliedData(savedJob);
   }, [featuredJob]);
 
+  // filter btn handler
+  const handlerFilterBy = (jobStatus) => {
+    if (jobStatus === "Onsite") {
+      const onsiteJobs = data.filter(
+        (jobs) => jobs.remote_or_onsite === "Onsite"
+      );
+      setAppliedData(onsiteJobs);
+    } else if (jobStatus === "Remote") {
+      const remoteJobs = data.filter(
+        (jobs) => jobs.remote_or_onsite === "Remote"
+      );
+      setAppliedData(remoteJobs);
+    } else {
+      setAppliedData(data);
+    }
+  };
   return (
     <div>
       <h1 className="text-3xl font-bold text-[#1A1919] text-center mt-16 mb-8 md:mb-20">
         Applied Job
       </h1>
-      <div className="my-6 flex justify-end">
-        <label>
-          {filterBy && (
-            <div className="dropdown dropdown-hover">
-              <label tabIndex={0} className="my-btn m-4">
-                Filter By:
-              </label>
-              <ul
-                tabIndex={0}
-                className="dropdown-content menu p-2 shadow bg-base-200 rounded-box w-full"
-              >
-                <li>
-                  <a
-                    onClick={() => {
-                      handleFilterBy("All");
-                    }}
-                  >
-                    All
-                  </a>
-                </li>
-                <li>
-                  <a
-                    onClick={() => {
-                      handleFilterBy("Onsite");
-                    }}
-                  >
-                    Onsite
-                  </a>
-                </li>
-                <li>
-                  <a
-                    onClick={() => {
-                      handleFilterBy("Remote");
-                    }}
-                  >
-                    Remote
-                  </a>
-                </li>
-              </ul>
-            </div>
-          )}
-        </label>
+      <div className="mb-5 flex justify-end gap-5">
+        <button
+          onClick={() => {
+            handlerFilterBy("Onsite");
+          }}
+          className="border-2 border-[#7E90FE] py-2 px-5 rounded-md font-bold text-gray-800 bg-[#9873FF1A]"
+        >
+          Onsite
+        </button>
+        <button
+          onClick={() => {
+            handlerFilterBy("Remote");
+          }}
+          className="border-2 border-[#7E90FE] py-2 px-5 rounded-md font-bold text-gray-800 bg-[#9873FF1A]"
+        >
+          Remote
+        </button>
       </div>
 
       <div>
-        {data.map((singleJob) => (
+        {appliedData.map((singleJob) => (
           <ApplyJob key={singleJob.id} appliedJob={singleJob}></ApplyJob>
         ))}
       </div>

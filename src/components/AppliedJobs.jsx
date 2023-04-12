@@ -7,7 +7,6 @@ import ApplyJob from "./ApplyJob";
 
 const AppliedJobs = () => {
   const { categories, featuredJob } = useLoaderData();
-  console.log(featuredJob);
 
   const [data, setData] = useState([]);
   const [appliedData, setAppliedData] = useState([]);
@@ -22,7 +21,6 @@ const AppliedJobs = () => {
     salary,
   } = data;
   const storedData = getStoredData();
-  console.log(storedData);
 
   // finding applied job data from main data
   useEffect(() => {

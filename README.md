@@ -4,8 +4,6 @@ Find Your Next Tech Job: Discover Opportunities and Grow Your Career!
 
 # **Live Site** -> [HireTechies](https://hire-techies.netlify.app/)
 
-Find Your Next Tech Job: Discover Opportunities and Grow Your Career!
-
 # **Feature of this website**
 
 - A homepage that showing a banner related to finding job and some job category and a job features section that was showing some job data

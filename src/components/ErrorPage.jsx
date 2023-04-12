@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ErroPage = () => {
+const ErrorPage = () => {
   return (
     <div className="flex flex-col justify-center min-h-screen items-center bg-[#9873FF1A]">
       <img
@@ -25,4 +25,4 @@ const ErroPage = () => {
   );
 };
 
-export default ErroPage;
+export default ErrorPage;

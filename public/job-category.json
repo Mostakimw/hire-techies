@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "logo": "/src/assets/Icons/accounts-1.png",
+    "logo": "https://i.ibb.co/D9RFBpY/accounts-1.png",
     "job_category": "Account & Finance",
     "jobs_available": 50
   },
   {
     "id": 2,
-    "logo": "/src/assets/Icons/business-1.png",
+    "logo": "https://i.ibb.co/RpvbDpK/business-1.png",
     "job_category": "Creative Design",
     "jobs_available": 75
   },
   {
     "id": 3,
-    "logo": "/src/assets/Icons/Frame.png",
+    "logo": "https://i.ibb.co/7g9DK7c/Frame-1.png",
     "job_category": "Product Manager",
     "jobs_available": 100
   },
   {
     "id": 4,
-    "logo": "/src/assets/Icons/chip-1.png",
+    "logo": "https://i.ibb.co/WssLJSx/chip-1.png",
     "job_category": "Engineering Job",
     "jobs_available": 65
   }

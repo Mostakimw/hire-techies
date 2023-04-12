@@ -6,7 +6,7 @@ const ErroPage = () => {
     <div className="flex flex-col justify-center min-h-screen items-center bg-[#9873FF1A]">
       <img
         className="w-1/3 rounded-lg"
-        src="/src/assets/all/error.webp"
+        src="https://i.ibb.co/xjRK3wC/error.webp"
         alt=""
       />
       <div className="text-center">
